@@ -3,104 +3,11 @@
   <head>
     <title>Daniel Koceja</title>
     <meta name="description" content="Daniel Koceja's portfolio.">
-    <style>
-      html {
-        margin-left: 250px;
-        padding: 0px;
-        padding-top: 0px;
-        background-color: #fafafa;
-      }
 
-      body {
-        background-color: #fafafa !important;
-
-      }
-
-      html h1 {
-        text-align: center;
-        font-family: 'Roboto', sans-serif;
-      }
-
-      #rest {
-        margin: auto;
-        margin-top: 0px;
-        max-width: 700px;
-      }
-
-      @media screen and (max-width: 1000px) {
-        #rest {
-          margin: auto;
-          width: 90%;
-        }
-      }
-
-      .sidenav {
-        height: 100%; /* Full-height: remove this if you want "auto" height */
-        width: 250px; /* Set the width of the sidebar */
-        position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-        z-index: 1; /* Stay on top */
-        top: 0; /* Stay at the top */
-        left: 0;
-        padding: 25px;
-        overflow-x: hidden; /* Disable horizontal scroll */
-      }
-
-      /* The navigation menu links */
-      .sidenav a {
-        padding: 6px 8px 6px 0px;
-        text-decoration: none;
-        font-size: 20px;
-        color: black;
-        display: block;
-      }
-
-      /* When you mouse over the navigation links, change their color */
-      .sidenav a:hover {
-        color:  gray;
-        text-decoration: none;
-      }
-
-      /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
-      @media screen and (max-width: 1000px) {
-        .sidenav {
-          visibility: hidden;
-          /* padding-top: 15px; */
-        }
-        .sidenav a {
-          /* font-size: 18px; */
-          visibility: hidden;
-        }
-        html {
-          margin-left: 0px;
-        }
-      }
-
-      .keyDiv {
-        padding-top: 80px;
-      }
-
-      @media screen and (max-height: 625px) {
-        .sidenav {
-          visibility: hidden;
-          /* padding-top: 15px; */
-        }
-        .sidenav a {
-          /* font-size: 18px; */
-          visibility: hidden;
-        }
-        html {
-          margin-left: 0px;
-        }
-      }
-
-      .categoryHeader {
-        padding-bottom: 30px
-      }
-
-    </style>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Roboto:wght@300&display=swap" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
       src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
       integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
@@ -119,13 +26,12 @@
     />
     <script>
       $(document).ready(function(){
-
-    /*! Fades in page on load */
-    $('body').css('display', 'none');
-    $('body').fadeIn(1000);
-
-});
+      /*! Fades in page on load */
+      $('body').css('display', 'none');
+      $('body').fadeIn(1000);
+      });
     </script>
+
   </head>
 
   <body>
@@ -149,25 +55,25 @@
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
             <div class="card project">
-              <img src="./board-game-blur.png" class="card-img-top" alt="..." />
+              <img src="./images/board-game-blur.png" class="card-img-top" alt="..." />
             </div>
           </div>
           <div class="col mb-4">
             <div class="card project">
-              <img src="./minesweeper-blur.png" class="card-img-top" alt="..." />
+              <img src="./images/minesweeper-blur.png" class="card-img-top" alt="..." />
             </div>
           </div>
           <div class="col mb-4">
             <div class="card project">
               <a href="https://koceja.github.io/jeopardy/"
-                ><img src="./jeopardy.png" class="card-img-top" alt="..."
+                ><img src="./images/jeopardy.png" class="card-img-top" alt="..."
               /></a>
             </div>
           </div>
           <div class="col mb-4">
             <div class="card project">
               <a href="https://github.com/koceja/Dynamic-Hand-Recognition-Drawing-Program">
-              <img src="./hand-drawer (2).gif" class="card-img-top" alt="..." />
+              <img src="./images/hand-drawer (2).gif" class="card-img-top" alt="..." />
               </a>
             </div>
           </div>
@@ -179,11 +85,11 @@
         <div class="card-deck">
           <div class="card">
             <div class="card-body">
-              <h5 class="card-title" style="color: black;">Technical Intern</h5>
-              <h6 class="card-subtitle mb-2 text-muted">SAS Institute</h6>
-                <h6 class="card-subtitle mb-2 text-muted">Cary, NC</h6>
-                <h6 class="card-subtitle mb-2 text-muted">May 2020 - August 2020</h6>
-                <p class="card-text">Working on the Visual Analytics team</p>
+              <h5 class="card-title" style="color: black;">Software Development Engineer Intern</h5>
+              <h6 class="card-subtitle mb-2 text-muted">TBA</h6>
+                <h6 class="card-subtitle mb-2 text-muted">TBA</h6>
+                <h6 class="card-subtitle mb-2 text-muted">June 2020 - September 2020</h6>
+                <p class="card-text">To be announced on start date.</p>
   
             </div>
           </div>
@@ -194,13 +100,14 @@
                 <h6 class="card-subtitle mb-2 text-muted">Spring 2020</h6>
         
                 <p class="card-text">
-                  <p>Developed an minimum viable product for a fashion web app.<br>
-                  The web app allows users to select outfits and suggests outfits to them based on their selections.<br>
-                  Developed the front-end and server that interacts with machine learning engines and the clients.</p>
-                  </div>
+                    Developed an minimum viable product for a fashion web app.<br>
+                    The web app allows users to select outfits and suggests outfits to them based on their selections.
+                </p>
+                
+              </div>
           </div>
+
           <div class="card">
-            
                   <div class="card-body">
                     <h5 class="card-title">Learning Assistant</h5>
                       <h6 class="card-subtitle mb-2 text-muted">University of North Carolina at Chapel Hill</h6>
