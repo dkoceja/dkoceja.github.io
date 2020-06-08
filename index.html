@@ -55,7 +55,9 @@
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
             <div class="card project">
-              <img src="./images/board-game-blur.png" class="card-img-top" alt="..." />
+              <a href="https://mozilla-fashapp.herokuapp.com/">
+                <img src="./images/fashapp.jpg" class="card-img-top" alt="..." />
+              </a>
             </div>
           </div>
           <div class="col mb-4">
@@ -221,18 +223,22 @@
   </body>
   <script>
     $(".project").mouseenter(function () {
+      $(this).stop();
       $(this).animate({ marginTop: "-5px", marginBottom: "5px" }, "fast");
     });
 
     $(".project").mouseleave(function () {
+      $(this).stop();
       $(this).animate({ marginTop: "0px", marginBottom: "0px"}, "fast");
     });
 
     $(".sidenavLink").mouseenter(function () {
+      $(this).stop();
       $(this).animate({ marginRight: "-3px", paddingLeft: "3px" }, "fast");
     });
 
     $(".sidenavLink").mouseleave(function () {
+      $(this).stop();
       $(this).animate({ marginRight: "3px", paddingLeft: "0px"}, "fast");
     });
   </script>
