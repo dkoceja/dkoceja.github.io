@@ -3,10 +3,20 @@
     background-image: url("./images/programming.png");
 }
 
+#top-bar {
+    width: 100%;
+    height: 30px;
+    background-color: yellow;
+    text-shadow: -2px 2px black;
+    color: yellow;
+    font-weight: bold;
+    text-align: center;
+}
+
 #header-info {
     width: 80%;
     margin: auto;
-    padding-top: 150px;
+    padding-top: 120px;
 }
 
 #album-cover {
