@@ -153,7 +153,6 @@
 #music-wrapper {
     background-image: linear-gradient(black,gray);
     margin: 0px;
-    height: 600px;
 }
 
 #music {
@@ -194,10 +193,6 @@
     #albums {
         display: block;
         
-    }
-
-    #music-wrapper {
-        height: auto;
     }
 }
 
