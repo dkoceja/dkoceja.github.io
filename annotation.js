@@ -2,7 +2,7 @@ var links = ["#chemistry", "#Amazon", "#Mozilla", "#TA", "#Duke", "#Fashapp", "#
 var initialPadding = 60;
 
 var notes = {
-    "chemistry": "I conducted a lot of chemistry research back in high school, and was actually a chemistry major for my first year in college.",
+    "chemistry": "I conducted a lot of chemistry research back in high school and was actually a chemistry major for my first year in college.",
     "Amazon": "I was an Amazon SDE Intern from June - September 2020.",
     "Mozilla": "The Mozilla Builders Lab was a program for startups to get mentorship from experienced entrepreneurs and peer groups of professionals all across the world. I participated in this program for both the Spring 2020 and Summer 2020 sessions.",
     "TA": "In fall 2019, I was an undergraduate TA for Comp 401: Foundations of Programming. In spring 2020, I switched to Comp 455: Models of Language and Computation.",
