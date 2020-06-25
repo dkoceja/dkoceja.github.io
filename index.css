@@ -161,8 +161,14 @@
 @media screen and (max-width: 1210px) {
     #music {
         padding: 0px;
-        padding-bottom: 10%;
+        padding-bottom: 50px;
         
+    }
+
+    #music-header {
+        padding-top: 50px;
+        margin: auto;
+        text-align: center;
     }
 }
 
