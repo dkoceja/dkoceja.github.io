@@ -170,6 +170,8 @@
 #music-header {
     padding-bottom: 50px;
     color: yellow;
+    margin-bottom: 0px;
+    height: 70px;
 }
 
 #albums {
