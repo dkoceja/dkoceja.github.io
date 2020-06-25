@@ -23,7 +23,7 @@ var clickEvent = function() {
         const yThis = $(this).offset().top;
 
         const newHtml = "<h3>'"+ $(this).html() + "'</h3><p>" + notes[$(this).attr('id')] + "</p>"
-            var yNew = yThis - yNotes;
+            var yNew = yThis - yNotes - 75;
             yNew = yNew + "px";
             $("#notes").css("padding-top", yNew);
             $("#notes").html(newHtml)
