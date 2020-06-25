@@ -91,10 +91,27 @@
 
     #lyrics {
         padding-top: 50px;
+        margin: 0px;
     }
 
     #header-info {
         padding-top: 75px;
+    }
+
+    #actual-lyrics {
+        width: 45vw;
+        margin-right: 50vw;
+        padding-right: 2vw;
+        border-right: 5px solid #8b8bff;
+    
+    }
+    
+    #notes {
+        float: right;
+        height: 100vh;
+        width: 43vw;
+        padding-left: 2vw;
+    
     }
 }
 
