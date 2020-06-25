@@ -162,18 +162,19 @@
 
 #music-wrapper {
     background-image: linear-gradient(black,gray);
-    margin: 0px;
-}
-
-#music {
     padding: 50px;
-    width: auto;
     text-align: center;
 }
+
 
 #music-header {
     padding-bottom: 50px;
     color: yellow;
+}
+
+#albums {
+    height: 380px;
+    margin: auto;
 }
 
 #footer-wrapper {
