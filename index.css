@@ -139,33 +139,19 @@
 }
 
 
-#intro {
-    
-}
-
-#experience {
-}
-
-#projects {
-}
-
-#education {
-}
-
 #music-wrapper {
     background-image: linear-gradient(black,gray);
     margin: 0px;
 }
 
 #music {
-    padding: 10%;
-    padding-top: 0px;
+    padding: 50px;
     width: auto;
     text-align: center;
 }
 
 #music-header {
-    padding: 10%;
+    padding-bottom: 50px;
     color: yellow;
 }
 
