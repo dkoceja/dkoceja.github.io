@@ -161,22 +161,16 @@
 
 
 #music-wrapper {
-    background-image: linear-gradient(black,gray);
-    padding: 50px;
     text-align: center;
-}
-
-
-#music-header {
-    padding-bottom: 50px;
-    color: yellow;
-    margin-bottom: 0px;
-    height: 70px;
+    position: relative;
+    height: 500px;
 }
 
 #albums {
-    height: 380px;
+    position: absolute;
+    top: 0px;
     margin: auto;
+
 }
 
 #footer-wrapper {

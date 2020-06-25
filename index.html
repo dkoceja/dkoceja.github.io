@@ -135,11 +135,8 @@
       
     </div>
     <div id="music-wrapper">
-        <div id="music-header">
-          <h1>Music that the artist loves...</h1>
-        </div>
         <div id="albums">
-          <iframe id="playlist" src="https://open.spotify.com/embed/playlist/16AgoEPKPXrc3RrTsFCjSr" width="880" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+          <iframe id="playlist" src="https://open.spotify.com/embed/playlist/5E6eqTQIwTufwwY6iXubnq" width="880" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
         </div>
     </div>
     <div id="footer-wrapper">
@@ -157,26 +154,15 @@
   <script>
 
 $(document).ready(function(){
-  if ($(window).width() < 980) {
-    if ($(window).width() < 700) {
-      $('#playlist').attr('width', '300px');
-    } else {
-      $('#playlist').attr('width', '500px');
-    }
-  } else {
-    $('#playlist').attr('width', '880px');
-  }
+  var newWidth = $(window).width()
+  newWidth = newWidth + "px";
+  $('#playlist').attr('width', newWidth);
+
 
   $(window).resize(function() {
-  if ($(window).width() < 980) {
-    if ($(window).width() < 700) {
-      $('#playlist').attr('width', '300px');
-    } else {
-      $('#playlist').attr('width', '500px');
-    }
-  } else {
-    $('#playlist').attr('width', '880px');
-  }})
+    var newWidth = $(window).width()
+  newWidth = newWidth + "px";
+  $('#playlist').attr('width', newWidth);})
 });
   </script>
 
