@@ -176,36 +176,6 @@
     color: yellow;
 }
 
-#albums {
-    display: inline-flex;
-
-}
-
-.iframe {
-    margin: 10px;
-}
-
-@media screen and (max-width: 1210px) {
-    #music {
-        padding: 0px;
-        padding-bottom: 50px;
-        
-    }
-
-    #music-header {
-        padding-top: 50px;
-        margin: auto;
-        text-align: center;
-    }
-}
-
-@media screen and (max-width: 977px) {
-    #albums {
-        display: block;
-        
-    }
-}
-
 #footer-wrapper {
     background-color: black;
     margin: 0px;

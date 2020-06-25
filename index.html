@@ -140,15 +140,7 @@
           <h1>Music that the artist loves...</h1>
         </div>
         <div id="albums">
-            <div class="iframe">
-              <iframe src="https://open.spotify.com/embed/album/0E47vczx9XVds1Lr2Y8rze" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="iframe">
-              <iframe src="https://open.spotify.com/embed/album/01FCoGEQ3NFWF4fHJzdiax" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
-            <div class="iframe">
-              <iframe src="https://open.spotify.com/embed/album/2nkto6YNI4rUYTLqEwWJ3o" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-            </div>
+          <iframe id="playlist" src="https://open.spotify.com/embed/playlist/16AgoEPKPXrc3RrTsFCjSr" width="880" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
           </div>
 
       </div>
@@ -164,6 +156,31 @@
       </div>
     </div>
     <script src="annotation.js">
+  </script>
+  <script>
+
+$(document).ready(function(){
+  if ($(window).width() < 980) {
+    if ($(window).width() < 700) {
+      $('#playlist').attr('width', '300px');
+    } else {
+      $('#playlist').attr('width', '500px');
+    }
+  } else {
+    $('#playlist').attr('width', '880px');
+  }
+
+  $(window).resize(function() {
+  if ($(window).width() < 980) {
+    if ($(window).width() < 700) {
+      $('#playlist').attr('width', '300px');
+    } else {
+      $('#playlist').attr('width', '500px');
+    }
+  } else {
+    $('#playlist').attr('width', '880px');
+  }})
+});
   </script>
 
   </body>
