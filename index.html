@@ -6,6 +6,8 @@
 
     <link rel="stylesheet" href="index.css">
     <link href="https://fonts.googleapis.com/css2?family=Lexend+Tera&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Source+Sans+Pro:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500&display=swap" rel="stylesheet">
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script
@@ -37,19 +39,63 @@
   <body>
     <div id="header">
       <div id="top-bar">
-        DANIEL KOCEJA
+        <p>D A N I E L &nbsp; K O C E J A</p>
       </div>
-      <div id="header-info">
-        <div id="album-cover">
-          <img src="./images/album-cover.jpg">
-        </div>
-        <div id="title">
-          <h2>Daniel Koceja</h2>
-          <h4>Software Engineer</h4>
-          <p>Produced by: <a href="https://www.linkedin.com/in/koceja/">Daniel Koceja</a></p>
-          <p>GitHub: <a href="https://github.com/koceja">koceja</a></p>
+      <div id="links">
+        <p>
+          <span id="info"><a data-target="#exampleModal" data-toggle="modal" href="#exampleModal">INFO</a></span>
+          <span id="linkedin"><a href="https://www.linkedin.com/in/koceja/">LINKEDIN</a></span>
+          <span id="github"><a href="https://github.com/koceja">GITHUB</a></span>
+          <span id="facebook"><a href="https://www.facebook.com/DanielKoceja/">FACEBOOK</a></span>
+
+          
+        </p>
+      </div>
+      
+      <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">My Information</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>
+                Daniel Koceja<br>
+                SDE Intern at Amazon.com<br>
+                Class of 2022 at UNC-Chepel Hill<br>
+                Email: dkoceja@live.unc.edu<br>
+              </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary" onclick="location.href='mailto:dkoceja@live.unc.edu'">Email me</button>
+            </div>
+          </div>
         </div>
       </div>
+      <div id="header-info-wrapper">
+        <div id="header-background">
+          <img src="./images/programming.png" style="width: -webkit-fill-available;height: min-content;">
+        </div>
+        <div id="overlay">
+
+        </div>
+        <div id="header-info">
+          <div id="album-cover">
+            <img src="./images/album-cover.jpg">
+          </div>
+          <div id="title">
+            <h2>Daniel Koceja</h2>
+            <h4>Software Engineer</h4>
+            <p>Produced by: <a href="https://www.linkedin.com/in/koceja/">Daniel Koceja</a></p>
+            <p>GitHub: <a href="https://github.com/koceja">koceja</a></p>
+          </div>
+        </div>
+      </div>
+      
       
     </div>
     <div id="lyrics-wrapper">
@@ -67,77 +113,76 @@
           <div id="" -->
         </div>
         <div id="actual-lyrics">
-          <div id="lyrics-title">
-            <p>Lyrics</p>
+          <div id="lyrics-text">
+            <div id="lyrics-title">
+              <p>Lyrics</p>
+            </div>
+            <div id="intro" class="section">
+              <p>
+                [verse: Intro]<br>
+                I'm a computer science student at UNC-Chapel Hill<br>
+                who is always trying to learn more and grow.<br>
+                Besides being a student, I am also a software engineer<br>
+                with specific skills in full-stack development<br>
+                and machine learning. 
+              </p>
+            </div>
+            <div id="experience" class="section">
+              <p>
+                [verse: Experience]<br>
+                I've had diverse experiences in areas from<br>
+                <a id="chemistry" class="lyric-tag">leadership to chemistry to computer science.</a><br>
+                Here are some of my main experiences.<br>
+                <a id="Amazon" class="lyric-tag">Software Development Engineer Intern at Amazon.</a><br>
+                <a id="Mozilla" class="lyric-tag">Project Lead in the Mozilla Builders Open Lab.</a><br>
+                <a id="TA" class="lyric-tag">Undegraduate Teaching Assistant at UNC-Chapel Hill.</a><br>
+                <a id="Duke" class="lyric-tag">Research Assistant at Duke University.</a>
+              </p>
+            </div>
+            <div id="projects" class="section">
+              <p>
+                [verse: Projects]<br>
+                I enjoy doing a lot of personal projects,<br>
+                mainly creating things that I think would be useful<br>
+                for my life. Here are some examples:<br>
+                <a id="Fashapp" class="lyric-tag">FashApp: A tool to help you find your style.</a><br>
+                <a id="jeopardy" class="lyric-tag">Jeopardy Trainer: Gives you random Jeopardy Questions to train.</a><br>
+                <a id="sales" class="lyric-tag">Sales Trend Analysis and Prediction.</a><br>
+                <a id="hand" class="lyric-tag">Dynamic hand recognition drawing tool.</a><br>
+      
+              </p>
+            </div>
+            <div id="education" class="section">
+              <p>
+                [verse: Education]<br>
+                At the <a id="unc" class="lyric-tag">University of North Carolina at Chapel Hill,</a><br>
+                <a id="degree" class="lyric-tag">I am pursuing a Computer Science B.S.<br>
+                  and a Mathematics B.S.</a><br>
+                I attended high school at<br>
+                <a id="ncssm" class="lyric-tag">North Carolina School of Science and Mathematics.</a>
+              </p>
+            </div>
+            <div id="hobbies" class="section">
+              <p>
+                [verse: Hobbies]<br>
+                <a id="sports" class="lyric-tag">I've been playing sports my whole life.<br>
+                  Basketball is probably my favorite.</a><br>
+                I am a huge music and hip-hop fan,<br>
+                inspiring me to make this website.<br>
+                Recently, I've gotten into art, like<br>
+                fashion and classic literature.
+              </p>
+            </div>
           </div>
-          <div id="intro" class="section">
-            <p>
-              [verse: Intro]<br>
-              I'm a computer science student at UNC-Chapel Hill<br>
-              who is always trying to learn more and grow.<br>
-              Besides being a student, I am also a software engineer<br>
-              with specific skills in full-stack development<br>
-              and machine learning. 
-            </p>
+          
+          <div id="music">
+            <h2><a><span id="albums" class="lyric-tag">The Artist's favorites...</span></a></h2>
+            <iframe id="playlist" src="https://open.spotify.com/embed/playlist/5E6eqTQIwTufwwY6iXubnq" width="880" height="600" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
           </div>
-          <div id="experience" class="section">
-            <p>
-              [verse: Experience]<br>
-              I've had diverse experiences in areas from<br>
-              <a id="chemistry">leadership to chemistry to computer science.</a><br>
-              Here are some of my main experiences.<br>
-              <a id="Amazon">Software Development Engineer Intern at Amazon.</a><br>
-              <a id="Mozilla">Project Lead in the Mozilla Builders Open Lab.</a><br>
-              <a id="TA">Undegraduate Teaching Assistant at UNC-Chapel Hill.</a><br>
-              <a id="Duke">Research Assistant at Duke University.</a>
-            </p>
-          </div>
-          <div id="projects" class="section">
-            <p>
-              [verse: Projects]<br>
-              I enjoy doing a lot of personal projects,<br>
-              mainly creating things that I think would be useful<br>
-              for my life. Here are some examples:<br>
-              <a id="Fashapp">FashApp: A tool to help you find your style.</a><br>
-              <a id="jeopardy">Jeopardy Trainer: Gives you random Jeopardy Questions to train.</a><br>
-              <a id="sales">Sales Trend Analysis and Prediction.</a><br>
-              <a id="hand">Dynamic hand recognition drawing tool.</a><br>
-    
-            </p>
-          </div>
-          <div id="education" class="section">
-            <p>
-              [verse: Education]<br>
-              At the <a id="unc">University of North Carolina at Chapel Hill,</a><br>
-              <a id="degree">I am pursuing a Computer Science B.S.<br>
-                and a Mathematics B.S.</a><br>
-              I attended high school at<br>
-              <a id="ncssm">North Carolina School of Science and Mathematics.</a>
-            </p>
-          </div>
-          <div id="hobbies" class="section">
-            <p>
-              [verse: Hobbies]<br>
-              <a id="sports">I've been playing sports my whole life.<br>
-                Basketball is probably my favorite.</a><br>
-              I am a huge music and hip-hop fan,<br>
-              inspiring me to make this website.<br>
-              Recently, I've gotten into art, like<br>
-              fashion and classic literature.
-            </p>
-          </div>
+
         </div>
+        
       </div>
-    </div>
-
-    <div id="music-header">
-      <h2>Check out some of my favorites</h2>
-    </div>
-
-    <div id="music-wrapper">
-        <div id="albums">
-          <iframe id="playlist" src="https://open.spotify.com/embed/playlist/5E6eqTQIwTufwwY6iXubnq" width="880" height="500" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
-        </div>
     </div>
 
     <div id="footer-wrapper">
@@ -155,17 +200,35 @@
   </script>
   <script>
 
-$(document).ready(function(){
-  var newWidth = $(window).width()
-  newWidth = newWidth + "px";
-  $('#playlist').attr('width', newWidth);
+    $(document).ready(function(){
+      var newWidth = $("#music").width();
+      newWidth = newWidth + "px";
+      $('#playlist').attr('width', newWidth);
+
+      var lyricsMargin = $("#lyrics").css("margin-left")
+      var newMargin = Number(lyricsMargin.substring(0, lyricsMargin.length-2));
+      if (newMargin > 20) {
+        newMargin -= 20;
+      }
+      newMargin = newMargin + "px";
+      $("#header-info").css("margin-left", newMargin);
+      
 
 
-  $(window).resize(function() {
-    var newWidth = $(window).width()
-  newWidth = newWidth + "px";
-  $('#playlist').attr('width', newWidth);})
-});
+      $(window).resize(function() {
+        var newWidth = $("#music").width();
+        newWidth = newWidth + "px";
+        $('#playlist').attr('width', newWidth);
+
+        var lyricsMargin = $("#lyrics").css("margin-left")
+        var newMargin = Number(lyricsMargin.substring(0, lyricsMargin.length-2));
+        if (newMargin > 20) {
+          newMargin -= 20;
+        }
+        newMargin = newMargin + "px";
+        $("#header-info").css("margin-left", newMargin);
+      })
+    })
   </script>
 
   </body>

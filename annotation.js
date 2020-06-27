@@ -2,6 +2,8 @@ var links = ["#chemistry", "#Amazon", "#Mozilla", "#TA", "#Duke", "#Fashapp", "#
 var initialPadding = 60;
 
 var notes = {
+    "default": "<span id='track-info-title'>TRACK INFO</span><table><tbody><tr><td class='table-category'>Written By</td><td>Daniel Koceja</td></tr><tr><td class='table-category'>Inspired By</td><td>Genius</td></tr><tr><td class='table-category'>Label</td><td>SDE Intern at Amazon</td></tr><tr><td class='table-category'>Recorded At</td><td>University of North Carolina at Chapel Hill</td></tr><tr><td class='table-category'>Release Date</td><td>Expected May 2022</td></tr><tr><td class='table-category'>Samples</td><td>Genius, Spotify</td></tr></tbody></table>",
+    
     "chemistry": "I conducted a lot of chemistry research back in high school and was actually a chemistry major for my first year in college.",
     "Amazon": "I was an Amazon SDE Intern from June - September 2020.",
     "Mozilla": "The Mozilla Builders Lab was a program for startups to get mentorship from experienced entrepreneurs and peer groups of professionals all across the world. I participated in this program for both the Spring 2020 and Summer 2020 sessions.",
@@ -12,9 +14,10 @@ var notes = {
     "sales": "As a part of the Carolina Data Challenge, my team created visuals that analyzed a data set and provided insight on trends. My specific contribution was creating a machine learning algorithm that predicted sales in the future dates with changes in variables. We won 2nd place in our category.",
     "hand": "This program allows you to draw with your webcam! With machine learning, this program will detect your hand and will allow you to draw shapes just with the movement of your hand. This project was completed in 2019.",
     "unc": "I am persuing a degree from UNC-Chapel Hill and have an anticipated graduation date of May 2022. I have attended UNC since fall 2018. Go Heels!",
-    "degree": "Here are a list of relevelent classes I've taken: Distributed Systems, Programming Intelligent Physical Systems, Algorithms and Analysis, Data Structures, Models of Language and Computation, Computer Organization, Introduction to Scientific Programming, Foundations of Programming, Calculus of Functions of Several Variables, Linear Algebra, Differential Equations, Advanced Calculus",
-    "ncssm": "I attended NCSSM, a public residential high school, from 2016 to 2018 when I graduated. The school has a STEM focus and had resources for studentss to go beyond a typical high school education, such as conduct research.",
-    "sports": "I played basketball and baseball at my middle school and high school. I still play some basketball here and there at UNC and try to keep myself active."
+    "degree": "Here are a list of relevelent classes I've taken:<br><ul><li>Distributed Systems</li><li>Programming Intelligent Physical Systems</li><li>Algorithms and Analysis</li><li>Data Structures</li><li>Models of Language and Computation</li><li>Computer Organization</li><li>Introduction to Scientific Programming</li><li>Foundations of Programming</li><li>Calculus of Functions of Several Variables</li><li>Linear Algebra</li><li>Differential Equations</li><li>Advanced Calculus</li></ul>",
+    "ncssm": "I attended NCSSM, a public residential high school, from 2016 to 2018 when I graduated. The school has a STEM focus and had resources for students to go beyond a typical high school education, such as research opportunities.",
+    "sports": "I played basketball and baseball at my middle school and high school. I still play some basketball here and there at UNC and try to keep myself active.",
+    "albums": "These are some of my favorite albums.<br><ol><li>good kid, m.A.A.d. city</li><li>Madvillainy</li><li>Flower Boy</li><li>To Pimp a Butterfly</li>"
 }
 
 var clickEvent = function() {
@@ -27,10 +30,25 @@ var clickEvent = function() {
             yNew = yNew + "px";
             $("#notes").css("padding-top", yNew);
             $("#notes").html(newHtml)
+            $("#notes").hide().fadeIn()
 }
 
 
 $(document).ready(function () {
+    const defaultNote = "<p>" + notes["default"] + "</p>"
+    $("#notes").html(defaultNote)
+
+    $("body").on("click", function(evt){    
+        if(evt.target.class == "lyric-tag")
+           return;
+           if($(evt.target).closest('.lyric-tag').length)
+          return;
+          $("#notes").css("padding-top", "0px");         
+           $("#notes").html(defaultNote)
+           $("#notes").hide().fadeIn()
+    });
+
+
     $("#chemistry").on("click", clickEvent)
     $("#Amazon").on("click", clickEvent)
     $("#Mozilla").on("click", clickEvent)
@@ -44,4 +62,6 @@ $(document).ready(function () {
     $("#degree").on("click", clickEvent)
     $("#ncssm").on("click", clickEvent)
     $("#sports").on("click", clickEvent)
+
+    $("#albums").on("click", clickEvent)
 })

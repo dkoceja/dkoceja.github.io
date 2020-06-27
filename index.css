@@ -1,23 +1,120 @@
+#body {
+    margin: 0px;
+    padding: 0px;
+}
+
 #header {
     height: 350px;
-    background-image: url("./images/programming.png");
+    /* background-image: url("./images/programming.png"); */
+    position: relative;
 }
 
 #top-bar {
     width: 100%;
-    height: 30px;
-    background-color: yellow;
+    background-color: #FFFF64;
     text-shadow: -2px 2px black;
-    color: yellow;
+    color: #FFFF64;
     font-weight: bold;
     text-align: center;
+    font-size: 20px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-family: 'Nunito', sans-serif;
+}
+
+#top-bar p {
+    margin: 0px;
+}
+
+#links {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding-top: 9px;
+    padding-bottom: 9px;
+    font-family: 'Heebo', sans-serif;
+    font-size: .85em
+}
+
+#links p {
+    margin: 0px;
+}
+
+#links a {
+    text-decoration: none;
+    color: white;
+}
+
+#links a:hover {
+    color: #FFFF64;
+}
+
+#info {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#linkedin {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+}
+
+#github {
+    padding-left: 30px;
+    padding-right: 30px;
+    border-left: 1px white solid;
+    border-right: 1px white solid;
+}
+
+#facebook {
+    padding-left: 30px;
+    padding-right: 30xp;
+}
+
+#header-info-wrapper {
+    width: 100%;
+    height: 300px;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+#header-background {
+    z-index:-100;
+}
+
+#header-background {
+    object-fit: fill;
+    height: 100%;
+    overflow: hidden;
+
+}
+
+#overlay {
+    position: absolute;
+    height:100%;
+    width:100%;
+    top:0;
+    left:0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.308) 0%,#000000ef 100%);
+    z-index: 100;
 }
 
 #header-info {
-    width: 80%;
-    margin: auto;
-    padding-top: 120px;
+    width: 100%;
+    padding-top: 80px;
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 970px;
+
 }
+
+
 
 #album-cover {
     float: left;
@@ -34,7 +131,7 @@
 }
 
 #title {
-    color: yellow;
+    color: #FFFF64;
     font-weight: bold;
     margin-left: 350px;
     padding-top: 10px;
@@ -49,6 +146,10 @@
     color: gray
 }
 
+#title a {
+    color: #7d8fe8;
+}
+
 #lyrics-wrapper {
     background-color: #e7e7e7;
     padding-bottom: 10%;
@@ -56,13 +157,11 @@
 
 #lyrics {
     background-color: white;
-    width: auto;
-    margin-left: 15vw;
-    margin-right: 15vw;
+    max-width: 970px;
+    margin-left: auto;
+    margin-right: auto;
     padding-top: 140px;
     padding-bottom: 120px;
-    padding-left: 5vw;
-    padding-right: 5vw;
     font-family: 'Roboto', sans-serif;
 
     border-bottom: 1px solid white;
@@ -70,70 +169,35 @@
 }
 
 #actual-lyrics {
-    width: 32vw;
+    width: 58%;
+    padding: 0 1rem;
     margin-right: 28vw;
-    padding-right: 2vw;
-    border-right: 5px solid #8b8bff;
+    border-right: 5px solid #99A7EE;
 
 }
 
 #notes {
     float: right;
-    height: 100vh;
-    width: 26vw;
-    padding-left: 2vw;
+    height: auto;
+    width: 42%;
+    padding-left: calc(1rem + 4px);  
+    padding-right: 1rem;
 
 }
+
 
 #music-header {
     width: 100%;
     height: 50px;
-    background-color: yellow;
+    background-color: #FFFF64;
     text-shadow: -2px 2px black;
-    color: yellow;
+    color: #FFFF64;
     font-weight: bold;
     text-align: center;
+    font-family: 'Nunito', sans-serif;
 }
 
-@media screen and (max-width: 990px) {
-    #album-cover {
-        
-        width: 200px;
-        height: 200px;
-    }
-    
-    #title {
-        color: yellow;
-        font-weight: bold;
-        margin-left: 250px;
-        padding-top: 10px;
-    }
 
-    #lyrics {
-        padding-top: 50px;
-        margin: 0px;
-    }
-
-    #header-info {
-        padding-top: 75px;
-    }
-
-    #actual-lyrics {
-        width: 45vw;
-        margin-right: 50vw;
-        padding-right: 2vw;
-        border-right: 5px solid #8b8bff;
-    
-    }
-    
-    #notes {
-        float: right;
-        height: 100vh;
-        width: 43vw;
-        padding-left: 2vw;
-    
-    }
-}
 
 
 
@@ -166,21 +230,75 @@
 
 #lyrics a:hover {
     text-decoration:none;
-    background-color: yellow;
+    background-color: #FFFF64;
+}
+
+#notes a {
+    text-decoration: none;
+    color: #7d8fe8;
+    background-color: white;
+    font-weight: bold;
+}
+
+#notes a:hover {
+    color: #7d8fe8;
+    background-color: white;
+}
+
+#track-info-title {
+    font-weight: bold;
+    font-size: 1em;
+
+}
+
+#notes table tr {
+    margin-top: .25rem;
+    padding-top: .25rem;
+    border-top: 1px solid #e9e9e9;
+    line-height: 1.45em;
+    font-size: 1em;
+    font-weight: bold;
+    color: #7d8fe8;
+    display: flex;
+}
+
+#notes p {
+    margin: 0px;
+}
+
+#notes table td {
+    flex: 5;
+}
+
+.table-category {
+    padding-right: .5rem;
+    color: #9a9a9a;
+    flex: 2 !important;
 }
 
 
-#music-wrapper {
-    text-align: center;
-    position: relative;
-    height: 500px;
-}
+@media screen and (max-width: 990px) {
+    #album-cover {
+        
+        width: 200px;
+        height: 200px;
+    }
+    
+    #title {
+        color: yellow;
+        font-weight: bold;
+        margin-left: 250px;
+        padding-top: 10px;
+    }
 
-#albums {
-    position: absolute;
-    top: 0px;
-    margin: auto;
+    #lyrics {
+        padding-top: 50px;
+        margin: 0px;
+    }
 
+    #header-info {
+        padding-top: 50px;
+    }
 }
 
 #footer-wrapper {
@@ -202,5 +320,5 @@
 }
 
 #footer a:hover {
-    color: yellow;
+    color: #FFFF64;
 }
