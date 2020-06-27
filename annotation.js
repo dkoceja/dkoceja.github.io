@@ -50,6 +50,7 @@ $(document).ready(function () {
           if ($("#notes").html() == defaultNote) {
               return;
           }
+          clicked = false;
           $("#notes").css("padding-top", "0px");         
            $("#notes").html(defaultNote)
            $("#notes").hide().fadeIn()
