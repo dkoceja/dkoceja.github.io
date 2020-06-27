@@ -20,7 +20,10 @@ var notes = {
     "albums": "These are some of my favorite albums.<br><ol><li>good kid, m.A.A.d. city</li><li>Madvillainy</li><li>Flower Boy</li><li>To Pimp a Butterfly</li>"
 }
 
+var clicked = false;
+
 var clickEvent = function() {
+    clicked = true;
     const yNotes = $("#notes").offset().top
         const yWindow = $(window).scrollTop();
         const yThis = $(this).offset().top;
@@ -38,11 +41,15 @@ $(document).ready(function () {
     const defaultNote = "<p>" + notes["default"] + "</p>"
     $("#notes").html(defaultNote)
 
-    $("body").on("click", function(evt){    
+    $("body").on("click", function(evt){   
+        if (!clicked) return; 
         if(evt.target.class == "lyric-tag")
            return;
            if($(evt.target).closest('.lyric-tag').length)
           return;
+          if ($("#notes").html() == defaultNote) {
+              return;
+          }
           $("#notes").css("padding-top", "0px");         
            $("#notes").html(defaultNote)
            $("#notes").hide().fadeIn()
