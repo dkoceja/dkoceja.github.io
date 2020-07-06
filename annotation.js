@@ -6,7 +6,7 @@ var notes = {
     
     "chemistry": "I conducted a lot of chemistry research back in high school and was actually a chemistry major for my first year in college.",
     "Amazon": "I was an Amazon SDE Intern from June - September 2020.",
-    "Mozilla": "The Mozilla Builders Lab was a program for startups to get mentorship from experienced entrepreneurs and peer groups of professionals all across the world. I participated in this program for both the Spring 2020 and Summer 2020 sessions.",
+    "Mozilla": "The Mozilla Builders Lab was a program for startups to get mentorship from experienced entrepreneurs and peer groups of professionals all across the world. I participated in this program for both the Spring 2020 session.",
     "TA": "In fall 2019, I was an undergraduate TA for Comp 401: Foundations of Programming. In spring 2020, I switched to Comp 455: Models of Language and Computation.",
     "Duke": "In 2017, I conducted research as a part of the Beratan Lab at Duke University. My research was on the p53 DNA binding domain, so it included chemistry, physics, biology, and computer science.",
     "Fashapp": "Fashapp was a project that my team started during the Mozilla Builders Lab. It allows you to pick which clothing you like and saves it to a database. You can check what images you liked and get a better sense of your personal style. Check it out <a href='https://fashion-tool.herokuapp.com/'>here</a>",
