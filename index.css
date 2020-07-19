@@ -356,3 +356,10 @@
 #footer a:hover {
     color: #FFFF64;
 }
+
+#resume {
+    position: fixed;
+    top: 100px;
+    right: 30px;
+    z-index: 1000;
+}
